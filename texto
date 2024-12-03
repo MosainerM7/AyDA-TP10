@@ -1,0 +1,133 @@
+Alumno: Mosainer Martín
+Práctico: AyDA TP-10
+
+
+
+1: Aplicar mergesort para ordenar la lista E, X, A, M, P, L, E en orden alfabético.
+
+Ordenar con Mergesort (Dividir y Conquistar)
+El algoritmo mergesort funciona de la siguiente manera:
+Dividir: Dividimos la lista en mitades recursivamente hasta que quede una lista de tamaño 1.
+Conquistar: Combinamos las sublistas ordenadas de manera que el resultado final también esté ordenado.
+Fusionar: Unimos las sublistas mientras preservamos el orden.
+
+Paso a paso:
+
+Lista inicial:
+[E,X,A,M,P,L,E]
+
+Dividir la lista en dos mitades:
+
+[E,X,A] y [M,P,L,E]
+
+Dividir nuevamente:
+
+[E,X,A]→[E] y [X,A]→[X],[A]
+
+[M,P,L,E]→[M,P] y [L,E]→[L],[E]
+
+Conquistar y fusionar las sublistas:
+
+[X],[A] → [A,X]
+
+[E],[A,X] → [A,E,X]
+
+[M],[P] → [M,P]
+
+[L],[E] → [E,L]
+
+[M,P],[E,L] → [E,L,M,P].
+
+
+Fusionar las dos mitades ordenadas:
+
+[A,E,X],[E,L,M,P] → [A,E,E,L,M,P,X].
+
+Resultado final:
+
+[A,E,E,L,M,P,X].
+
+
+2: Aplicar quicksort para ordenar la lista E, X, A, M, P, L, E en orden alfabético.
+
+El algoritmo quicksort funciona de la siguiente manera:
+
+Elegir un pivote: Seleccionamos un elemento como pivote (generalmente el último elemento).
+Dividir: Reorganizamos la lista en dos partes:
+Elementos menores o iguales al pivote.
+Elementos mayores al pivote.
+Conquistar: Aplicamos recursivamente quicksort a cada una de las sublistas.
+Combinar: Unimos las sublistas ordenadas con el pivote en el medio.
+
+Paso a paso:
+
+Lista inicial:
+
+[E,X,A,M,P,L,E].
+
+Elegimos el pivote: E.
+
+Dividimos la lista en:
+
+Menores o iguales: 
+[E,A,E]
+
+Mayores: 
+[X,M,P,L]
+
+//b. Aplicamos quicksort recursivamente:
+
+Izquierda ([E,A,E]):
+
+Pivote: E.
+
+Menores o iguales: 
+[A,E]
+
+Mayores: 
+[]
+
+Resultado: 
+[A,E,E].
+
+Derecha ([X,M,P,L]):
+
+Pivote: L.
+
+Menores o iguales: 
+[M]
+
+Mayores: 
+[X,P].
+
+
+//c. Ordenamos:
+Menores o iguales ([M]): //Ya está ordenado.
+
+Mayores ([X,P]):
+
+Pivote: P.
+
+Menores o iguales: [].
+
+Mayores: 
+[X].
+
+Resultado: 
+[P,X].
+
+Resultado derecha: 
+[L,M,P,X].
+
+//d. Combinar:
+
+[A,E,E] + [L]+ [M,P,X] = [A,E,E,L,M,P,X]
+
+Y por último, el resultado final quedaría así: 
+
+Resultado final:
+[A,E,E,L,M,P,X]
+
+Entonces, nos quedaría que ambos algoritmos (mergesort y quicksort) 
+producen el mismo resultado ordenado:
+
