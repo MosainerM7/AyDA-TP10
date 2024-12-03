@@ -67,7 +67,7 @@ Paso a paso:
 
 Elegimos el pivote: E.
 
-Dividimos la lista en:
+//b. Dividimos la lista en:
 
 Menores o iguales: 
 [E,A,E]
@@ -75,7 +75,7 @@ Menores o iguales:
 Mayores: 
 [X,M,P,L]
 
-//b. Aplicamos quicksort recursivamente:
+//c. Aplicamos quicksort recursivamente:
 
 Izquierda ([E,A,E]):
 
@@ -101,7 +101,7 @@ Mayores:
 [X,P].
 
 
-//c. Ordenamos:
+//d. Ordenamos:
 Menores o iguales ([M]): //Ya está ordenado.
 
 Mayores ([X,P]):
@@ -119,13 +119,13 @@ Resultado:
 Resultado derecha: 
 [L,M,P,X].
 
-//d. Combinar:
+//e. Combinar:
 
 [A,E,E] + [L]+ [M,P,X] = [A,E,E,L,M,P,X]
 
 Y por último, el resultado final quedaría así: 
 
-//e. Resultado final:
+//f. Resultado final:
 [A,E,E,L,M,P,X]
 
 Entonces, nos quedaría que ambos algoritmos (mergesort y quicksort) 
