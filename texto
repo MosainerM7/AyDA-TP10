@@ -13,20 +13,20 @@ Fusionar: Unimos las sublistas mientras preservamos el orden.
 
 Paso a paso:
 
-Lista inicial:
+//a. Lista inicial:
 [E,X,A,M,P,L,E]
 
-Dividir la lista en dos mitades:
+//b. Dividir la lista en dos mitades:
 
 [E,X,A] y [M,P,L,E]
 
-Dividir nuevamente:
+//c. Dividir nuevamente:
 
 [E,X,A]→[E] y [X,A]→[X],[A]
 
 [M,P,L,E]→[M,P] y [L,E]→[L],[E]
 
-Conquistar y fusionar las sublistas:
+//d. Conquistar y fusionar las sublistas:
 
 [X],[A] → [A,X]
 
@@ -39,11 +39,11 @@ Conquistar y fusionar las sublistas:
 [M,P],[E,L] → [E,L,M,P].
 
 
-Fusionar las dos mitades ordenadas:
+//e. Fusionar las dos mitades ordenadas:
 
 [A,E,X],[E,L,M,P] → [A,E,E,L,M,P,X].
 
-Resultado final:
+//f. Resultado final:
 
 [A,E,E,L,M,P,X].
 
@@ -61,7 +61,7 @@ Combinar: Unimos las sublistas ordenadas con el pivote en el medio.
 
 Paso a paso:
 
-Lista inicial:
+//a. Lista inicial:
 
 [E,X,A,M,P,L,E].
 
@@ -125,9 +125,9 @@ Resultado derecha:
 
 Y por último, el resultado final quedaría así: 
 
-Resultado final:
+//e. Resultado final:
 [A,E,E,L,M,P,X]
 
 Entonces, nos quedaría que ambos algoritmos (mergesort y quicksort) 
-producen el mismo resultado ordenado:
+producen el mismo resultado ordenado.
 
